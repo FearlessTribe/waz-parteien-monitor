@@ -26,4 +26,4 @@ npm run preview
 
 ## Daten
 
-`public/articles.json` enthält den exportierten Artikeldatensatz (inkl. Parteierkennung und Targeted Sentiment). Die Datei wird mit dem Repo versioniert, damit GitHub Pages ohne Backend auskommt.
+`public/articles.json` enthält den exportierten Artikeldatensatz (inkl. Parteierkennung und Targeted Sentiment). Die Datei wird mit dem Repo versioniert, damit das Dashboard ohne Backend auskommt.
