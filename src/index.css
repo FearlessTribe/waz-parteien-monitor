@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --color-surface: #fafaf9;
+  --color-card: #ffffff;
+  --color-border: #e7e5e4;
+  --color-muted: #78716c;
+  --color-ink: #1c1917;
+  --color-accent: #1e3a5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.recharts-default-tooltip {
+  border-radius: 8px !important;
+  border: 1px solid var(--color-border) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06) !important;
+  font-family: var(--font-sans) !important;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.drawer-enter {
+  animation: slide-in 0.25s ease-out;
+}
