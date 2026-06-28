@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "export-data": "node scripts/export-data.mjs",
-    "deploy": "wrangler deploy --assets ./dist"
+    "deploy": "wrangler pages deploy dist --project-name=waz-parteien-monitor"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
