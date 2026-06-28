@@ -447,7 +447,7 @@ export function computePartyDetail(
 }
 
 export async function loadArticles(): Promise<Article[]> {
-  const res = await fetch("/articles.json");
+  const res = await fetch(`${import.meta.env.BASE_URL}articles.json`);
   if (!res.ok) return [];
   return res.json();
 }
